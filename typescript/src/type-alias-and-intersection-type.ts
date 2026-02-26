@@ -76,7 +76,7 @@ type DiscountedBook = Book & { discount: number }; // --> includes all props of 
 const book1: Book = {
     id: 1,
     name: 'Cook with me, part 1',
-    price: 25
+    price: 25,
 };
 
 const book2: Book = {
