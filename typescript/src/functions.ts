@@ -1,7 +1,7 @@
 // * Function params
 
 function sayHi(name: string) {
-    console.log(`Hello there ${name}`)
+    // console.log(`Hello there ${name}`);
 }
 
 sayHi('Peter');
@@ -20,7 +20,7 @@ function calculateDiscount(price: number): number {
 }
 
 const finalPrice = calculateDiscount(15);
-console.log(finalPrice)
+// console.log(finalPrice);
 
 // ---------------------------------------------------------
 
@@ -33,7 +33,7 @@ function isNameInList(name: string): boolean {
 let nameToCheck = 'Jane';
 
 if (isNameInList(nameToCheck)) {
-    console.log(`${nameToCheck} is in the list.`);
+    // console.log(`${nameToCheck} is in the list.`);
 } else {
-    console.log(`${nameToCheck} is not in the list.`);
+    // console.log(`${nameToCheck} is not in the list.`);
 }
