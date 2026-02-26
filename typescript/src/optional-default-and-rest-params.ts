@@ -52,5 +52,5 @@ function processInput(input: string | number) {
     }
 }
 
-processInput(3);
-processInput('Peter');
+// processInput(3);
+// processInput('Peter');
