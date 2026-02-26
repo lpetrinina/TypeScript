@@ -3,7 +3,9 @@ import './union-type';
 import './arrays-and-objects';
 import './functions';
 import './optional-default-and-rest-params';
-import './objects-as-params'
+import './objects-as-params';
+import './type-alias-and-intersection-type';
+
 
 
 
