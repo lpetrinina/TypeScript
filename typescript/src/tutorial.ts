@@ -5,6 +5,7 @@
 // import './optional-default-and-rest-params';
 // import './objects-as-params';
 // import './type-alias-and-intersection-type';
+import './fetch-data.ts'
 
 import newStudent, { person, sayHellow, type Student } from './modules.ts';
 
