@@ -61,3 +61,76 @@ function pair<T, U>(param1: T, param2: U): [T, U] {
 }
 
 let newPair = pair<string, number>('jane', 845279);
+
+// * Generics - Type Constraints
+
+//generic type can be either a number or a string
+function processValue<T extends string | number>(value: T): T {
+    console.log(value);
+    return value;
+}
+
+// processValue('hello');
+// processValue(874);
+
+// -----------------------------------------------------------------------
+
+type Car = {
+    brand: string;
+    model: string;
+};
+
+type Product = {
+    name: string;
+    price: number;
+};
+
+type Student = {
+    name: string;
+    age: number;
+};
+
+const car: Car = {
+    brand: 'ford',
+    model: 'mustang',
+};
+
+const product: Product = {
+    name: 'shoes',
+    price: 1.99,
+};
+
+const student: Student = {
+    name: 'peter',
+    age: 20,
+};
+
+// T must have at least the same properties and methods that Student has.
+function printStudentName<T extends Student>(input: T): void {
+    console.log(input.name)
+}
+
+// printStudentName(student);
+
+
+// The extends { name: string } part is a type constraint on T. It means that T can be any type, but it must be an object that has at least a name property of type string.
+function printName<T extends { name: string }>(input: T): void {
+    console.log(input.name)
+}
+
+// printName2(product);
+// printName2(student);
+
+// * Generics - Default Value
+
+interface StoreData<T = any> {
+    data: T[];
+}
+
+const storeNumbers: StoreData<number> = {
+    data: [41, 87],
+};
+
+const randomStuff: StoreData = {
+    data: ['random', 1]
+}
