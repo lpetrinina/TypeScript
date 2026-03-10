@@ -2,6 +2,7 @@
 // import Component from "./tutorials/02-state";
 // import Component from "./tutorials/03-events";
 // import Component from "./tutorials/challenge";
+// import ParentComponent from "./tutorials/04-context";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
       {/* Challenge */}
       {/* <Component type='basic' name='test' />
       <Component type='advanced' name='ivan' email='ivan@gmail.com' /> */}
+
+      {/* Context API */}
+      {/* <ParentComponent /> */}
     </main>
   );
 }
