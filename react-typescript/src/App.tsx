@@ -3,8 +3,9 @@
 // import Component from "./tutorials/03-events";
 // import Component from "./tutorials/challenge";
 // import ParentComponent from "./tutorials/04-context";
+// import Component from "./tutorials/05-reducers";
 
-import Component from "./tutorials/05-reducers";
+import Component from "./tutorials/06-fetch-data";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
 
       {/* Reducers */}
       {/* <Component /> */}
+
+      {/* Fetch Data */}
+      <Component />
     </main>
   );
 }
