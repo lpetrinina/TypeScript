@@ -4,6 +4,8 @@
 // import Component from "./tutorials/challenge";
 // import ParentComponent from "./tutorials/04-context";
 
+import Component from "./tutorials/05-reducers";
+
 function App() {
   return (
     <main>
@@ -23,6 +25,9 @@ function App() {
 
       {/* Context API */}
       {/* <ParentComponent /> */}
+
+      {/* Reducers */}
+      {/* <Component /> */}
     </main>
   );
 }
