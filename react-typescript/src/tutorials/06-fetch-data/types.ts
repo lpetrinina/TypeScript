@@ -1,4 +1,7 @@
+import axios from "axios";
 import * as z from "zod";
+
+const url = "https://www.course-api.com/react-tours-project";
 
 export const TourSchema = z.object({
     id: z.string(),
@@ -9,3 +12,17 @@ export const TourSchema = z.object({
 });
 
 export type Tour = z.infer<typeof TourSchema>;
+
+export const fetchTours = async function (): Promise<Tour[]> {
+
+    const response = await axios.get<Tour[]>(url);
+    console.log(response)
+    const result = TourSchema.array().safeParse(response.data);
+
+
+    if (!result.success) {
+        throw new Error(`Failed to parse tours.`)
+    }
+
+    return result.data;
+}

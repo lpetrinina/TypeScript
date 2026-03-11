@@ -50,7 +50,7 @@ function Component() {
 
   return (
     <div>
-      <h2>Fetch Data - Tours</h2>
+      <h4>Fetch Data - Fetch API & Zod</h4>
 
       {tours.map((tour) => {
         return (

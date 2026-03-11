@@ -4,8 +4,8 @@
 // import Component from "./tutorials/challenge";
 // import ParentComponent from "./tutorials/04-context";
 // import Component from "./tutorials/05-reducers";
-
-import Component from "./tutorials/06-fetch-data";
+// import Component from "./tutorials/06-fetch-data";
+// import Component from "./tutorials/06-fetch-data/index-02";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
       {/* <Component /> */}
 
       {/* Fetch Data */}
-      <Component />
+      {/* <Component /> */}
     </main>
   );
 }
