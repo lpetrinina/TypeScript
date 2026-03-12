@@ -7,6 +7,8 @@
 // import Component from "./tutorials/06-fetch-data";
 // import Component from "./tutorials/06-fetch-data/index-02";
 
+import Component from "./tutorials/07-redux-toolkit";
+
 function App() {
   return (
     <main>
@@ -31,6 +33,9 @@ function App() {
       {/* <Component /> */}
 
       {/* Fetch Data */}
+      {/* <Component /> */}
+
+      {/* Redux Toolkit */}
       {/* <Component /> */}
     </main>
   );
