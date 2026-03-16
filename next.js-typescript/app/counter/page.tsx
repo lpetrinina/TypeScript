@@ -4,7 +4,7 @@ import React from "react";
 function CounterPage() {
   return (
     <section>
-      <h1 className='text-5xl mb-10'>Counter Page</h1>
+      <h1 className='text-3xl mb-4'>Counter Page</h1>
       <Counter />
     </section>
   );
