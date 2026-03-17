@@ -1,6 +1,8 @@
 'use server'
 
 import { readFile, writeFile } from "fs/promises";
+import { revalidatePath } from "next/cache";
+
 
 type User = {
     id: string;
@@ -12,9 +14,10 @@ export async function createUser(formData: FormData) {
     const firstName = formData.get('firstName') as string;
     const lastName = formData.get('lastName') as string;
 
-    const newUser: User = { id: Date.now().toString(), firstName, lastName }
+    const newUser: User = { id: Date.now().toString(), firstName, lastName };
     await saveUser(newUser);
 
+    revalidatePath('/actions');
 }
 
 export async function getUsers(): Promise<User[]> {
