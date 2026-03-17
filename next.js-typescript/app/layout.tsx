@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inconsolata.className}>
         <NavBar />
 
-        <main className='max-w-3xl mx-auto py-10'>{children}</main>
+        <main className='max-w-3xl mx-auto py-10 px-5'>{children}</main>
       </body>
     </html>
   );
