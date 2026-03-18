@@ -42,3 +42,13 @@ async function saveUser(user: User) {
 
     await writeFile('users.json', JSON.stringify(users));
 }
+
+export async function deleteUser(id: string, formData: FormData) {
+
+    const users = await getUsers();
+    const updatedUsers = users.filter(user => user.id !== id);
+    await writeFile('users.json', JSON.stringify(updatedUsers));
+
+    revalidatePath('/actions')
+
+}
